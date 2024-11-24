@@ -1,0 +1,17 @@
+/* src/styles/CatalogPage.css */
+.catalog-container {
+    padding: 20px;
+  }
+  
+  .camper-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .camper-list li {
+    background: #f0f0f0;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  

@@ -1,0 +1,97 @@
+.catalogCard {
+  min-height: 368px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+
+  border: 1px solid var(--gray-light);
+  border-radius: 20px;
+  padding: 24px 64px 24px 24px;
+  background-color: var(--white);
+  position: relative;
+}
+
+.cardImg {
+  width: 100%;
+  max-width: 512px;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.cardContent {
+  flex-grow: 1;
+}
+
+.cardTitle {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.cardTitleWrap {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.cardTitleWrap > h2,
+.cardTitleWrap > p {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: var(--main);
+}
+
+.favoriteIconBtn {
+  background: transparent;
+  border: transparent;
+  padding: 0;
+
+  position: absolute;
+  right: 24px;
+}
+
+.cardInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.cardInfo > div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ratingText {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.cardDescription,
+.ratingText,
+.locationText {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main);
+}
+
+.cardDescription {
+  color: var(--text);
+  display: block;
+  max-width: 458px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 24px;
+}
+
+.showMoreLink {
+  padding: 16px 40px;
+}

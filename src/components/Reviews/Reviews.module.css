@@ -1,0 +1,59 @@
+.name,
+.descr,
+.avatar {
+  font-family: var(--font-family);
+  color: var(--text);
+}
+
+.wrapper {
+  max-width: 631px;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.commentWrap {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.avatar {
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  background-color: var(--badges);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  color: var(--button);
+}
+
+.commentHead {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main);
+}
+
+.descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}

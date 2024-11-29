@@ -1,0 +1,83 @@
+.typesWrapper {
+  margin-bottom: 40px;
+}
+
+.typesTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main);
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.typesTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  width: 360px;
+  height: 1px;
+  background-color: var(--gray-light);
+}
+
+.radioBtnItem:nth-child(2) svg {
+  width: 28px;
+  height: 28px;
+}
+
+.radioBtnItem:nth-child(2) .radioBtnCustom {
+  padding: 0;
+}
+
+.typesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  max-width: 360px;
+}
+
+.radioBtnLabel {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.radioBtn {
+  display: none;
+}
+
+.radioBtnCustom {
+  border: 1px solid var(--gray-light);
+  border-radius: 12px;
+  padding: 16px 18px;
+  width: 112px;
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: border-color var(--transition);
+}
+
+.radioBtn:checked + .radioBtnCustom {
+  border: 1px solid var(--button);
+}
+
+/* .radioBtnIcon {
+  width: 32px;
+  height: 32px;
+} */
+
+.radioBtnText {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--main);
+
+  margin-top: 10px;
+}

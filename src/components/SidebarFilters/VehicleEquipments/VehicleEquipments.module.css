@@ -1,0 +1,80 @@
+.equipmentsWrapper {
+  margin-bottom: 32px;
+}
+
+.equipmentsTitle {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--main);
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.equipmentsTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  width: 360px;
+  height: 1px;
+  background-color: var(--gray-light);
+}
+
+.equipmentsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  max-width: 360px;
+}
+
+.equipmentItem:nth-child(6) svg,
+.equipmentItem:nth-child(9) svg {
+  stroke: black;
+  fill: white;
+}
+
+.checkboxLabel {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkboxCustom {
+  border: 1px solid var(--gray-light);
+  border-radius: 12px;
+  padding: 16px 18px;
+  width: 112px;
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: border-color var(--transition);
+}
+
+.checkbox:checked + .checkboxCustom {
+  border: 1px solid var(--button);
+}
+
+.checkboxIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.checkboxText {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--main);
+
+  margin-top: 10px;
+}

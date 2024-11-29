@@ -1,0 +1,34 @@
+.sidebarWrapper {
+}
+
+.textForm {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text);
+
+  margin-bottom: 32px;
+}
+
+.submitBtn {
+  border-radius: 200px;
+  padding: 16px 0;
+  width: 166px;
+  height: 56px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: var(--white);
+  border: none;
+  transition: all 150ms ease-in-out;
+
+  background-color: var(--button);
+
+  &:hover {
+    background-color: var(--button-hover);
+  }
+}

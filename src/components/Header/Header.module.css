@@ -1,0 +1,45 @@
+.headerWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--badges);
+  padding: 24px 0;
+  position: relative;
+}
+
+.logoIcon {
+  position: absolute;
+  left: 64px;
+  transform: translateY(-50%);
+}
+
+.navList {
+  display: flex;
+  flex-grow: 0;
+  gap: 32px;
+}
+
+.link {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--main);
+  transition: outline-offset 250ms ease;
+
+  &:hover {
+    outline: 1px solid var(--button);
+    outline-offset: 10px;
+    border-radius: 200px;
+  }
+}
+
+.active {
+  color: var(--button-hover);
+
+  &:hover {
+    outline: none;
+  }
+}

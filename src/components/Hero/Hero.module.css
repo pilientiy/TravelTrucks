@@ -1,0 +1,35 @@
+.heroWrap {
+  height: 100vh;
+  background-image: url('/images/HeroPic-min.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titleWrap {
+  font-family: var(--font-family);
+  font-weight: 600;
+  color: var(--inputs);
+  padding-left: 64px;
+}
+
+.titleWrap > h1 {
+  font-size: 48px;
+  line-height: 0.67;
+  margin-bottom: 16px;
+}
+
+.titleWrap > h2 {
+  font-size: 24px;
+  line-height: 1.33;
+  margin-bottom: 40px;
+}
+
+.titleWrap .heroLink {
+  width: 173px;
+  padding: 16px 0;
+}

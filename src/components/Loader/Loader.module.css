@@ -1,0 +1,31 @@
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.routingBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  z-index: 1000;
+}
+
+.asyncBackdrop {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 150px;
+  border-radius: 20px;
+}
+
+.loader {
+  width: 128px;
+  height: 128px;
+}
+
+.asyncLoader {
+  width: 64px;
+  height: 64px;
+}
